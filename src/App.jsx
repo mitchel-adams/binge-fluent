@@ -10,6 +10,8 @@ import ProfilePage from './pages/ProfilePage.jsx';
 import SettingsPage from './pages/SettingsPage.jsx';
 import NotificationsPage from './pages/NotificationsPage.jsx';
 import ContentAnalysisPage from './pages/ContentAnalysisPage.jsx'; // Add new page for content analysis
+import Register from './components/Register.jsx'; // Add register component
+import Login from './components/Login.jsx'; // Add login component
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -29,6 +31,8 @@ const App = () => {
               <Route path="/settings" element={<SettingsPage />} />
               <Route path="/notifications" element={<NotificationsPage />} />
               <Route path="/content-analysis" element={<ContentAnalysisPage />} /> {/* Add route for content analysis */}
+              <Route path="/register" element={<Register />} /> {/* Add route for registration */}
+              <Route path="/login" element={<Login />} /> {/* Add route for login */}
             </Routes>
           </div>
           <RightSidebar />

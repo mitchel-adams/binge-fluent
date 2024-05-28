@@ -19,6 +19,8 @@ dotenv.config();
 const app = express();
 
 const mongoOptions = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
   serverSelectionTimeoutMS: 10000,
   socketTimeoutMS: 45000,
   connectTimeoutMS: 30000,
