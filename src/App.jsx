@@ -1,42 +1,29 @@
+// src/App.jsx
 import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar.jsx';
-import LeftSidebar from './components/LeftSidebar.jsx';
-import RightSidebar from './components/RightSidebar.jsx';
-import HomePage from './pages/HomePage.jsx';
-import BrowsePage from './pages/BrowsePage.jsx';
-import AccountPage from './pages/AccountPage.jsx';
-import ProfilePage from './pages/ProfilePage.jsx';
-import SettingsPage from './pages/SettingsPage.jsx';
-import NotificationsPage from './pages/NotificationsPage.jsx';
-import ContentAnalysisPage from './pages/ContentAnalysisPage.jsx'; // Add new page for content analysis
-import Register from './components/Register.jsx'; // Add register component
-import Login from './components/Login.jsx'; // Add login component
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar.jsx';
+import LandingPage from './pages/LandingPage.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import FeaturesPage from './pages/FeaturesPage.jsx';
+import PricingPage from './pages/PricingPage.jsx';
+import LoginPage from './pages/LoginPage.jsx';
+import RegisterPage from './pages/RegisterPage.jsx';
+import MemberApp from './MemberApp.jsx';
 
 const App = () => {
   return (
     <Router>
       <div className="App">
-        <Navbar userLevel={1} />
-        <div className="main-content">
-          <LeftSidebar />
-          <div className="middle-section">
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/browse" element={<BrowsePage />} />
-              <Route path="/account" element={<AccountPage />} />
-              <Route path="/profile" element={<ProfilePage />} />
-              <Route path="/settings" element={<SettingsPage />} />
-              <Route path="/notifications" element={<NotificationsPage />} />
-              <Route path="/content-analysis" element={<ContentAnalysisPage />} /> {/* Add route for content analysis */}
-              <Route path="/register" element={<Register />} /> {/* Add route for registration */}
-              <Route path="/login" element={<Login />} /> {/* Add route for login */}
-            </Routes>
-          </div>
-          <RightSidebar />
-        </div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/features" element={<FeaturesPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/app/*" element={<MemberApp />} />
+        </Routes>
       </div>
     </Router>
   );
