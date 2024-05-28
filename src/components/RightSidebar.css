@@ -1,0 +1,188 @@
+.right-sidebar {
+  width: 23%; /* Adjust width as needed */
+  background-color: #282828; /* Slightly lighter background */
+  color: #ffffff;
+  height: calc(100vh - 80px); /* Ensure it takes full height minus navbar */
+  padding: 10px; /* Reduce padding */
+  margin-left: 5px; /* Reduce margin to the left */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduce gap between the two containers */
+  overflow: hidden; /* Prevent the right sidebar from scrolling */
+}
+
+.ai-avatar-settings {
+  background-color: #1c1c1c;
+  padding: 5px; /* Reduce padding */
+  border-radius: 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 120px; /* Adjust height to give more space to the chat container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* For positioning the dropdown menu */
+}
+
+.avatar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.settings-icon {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.settings-icon:hover {
+  color: #aaaaaa;
+}
+
+.ai-avatar-image {
+  width: 150px; /* Adjust size */
+  height: 150px; /* Adjust size */
+  border-radius: 50%; /* Make the image circular */
+  margin-bottom: 5px; /* Reduce margin */
+}
+
+/* Dropdown menu styles */
+.settings-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #1c1c1c;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.settings-dropdown.show {
+  display: flex;
+}
+
+.settings-dropdown .menu-item {
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.settings-dropdown .menu-item:hover {
+  background-color: #444;
+}
+
+/* Submenu styles */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 100%; /* Position to the left */
+  background-color: #1c1c1c;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.submenu .menu-item {
+  padding: 10px;
+}
+
+.settings-dropdown .menu-item:hover .submenu {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Checkmark styles */
+.checkmark {
+  position: absolute;
+  right: 10px;
+  color: #4caf50;
+}
+
+/* Chat container styling for iMessage look */
+.chat-container {
+  background-color: #1c1c1c;
+  padding: 10px; /* Reduce padding */
+  border-radius: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent the chat container from overflowing */
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto; /* Enable scrolling for the chat window */
+  margin-bottom: 10px; /* Reduce margin */
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 80%;
+  display: inline-block;
+  clear: both;
+}
+
+.message.user {
+  background-color: #0b93f6;
+  color: #fff;
+  text-align: left;
+  float: right;
+}
+
+.message.ai {
+  background-color: #e5e5ea;
+  color: #000;
+  text-align: left;
+  float: left;
+}
+
+.chat-form {
+  display: flex;
+  margin-top: auto; /* Ensure the chat form stays at the bottom */
+  padding-top: 10px; /* Add padding to the top */
+  background-color: #1c1c1c; /* Match the background color */
+  border-top: 1px solid #444; /* Add a top border */
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.chat-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chat-form button:hover {
+  background-color: #666;
+}

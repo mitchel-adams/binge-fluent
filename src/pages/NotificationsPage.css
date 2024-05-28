@@ -1,0 +1,39 @@
+.notifications-page {
+    padding: 20px;
+    background-color: #282828; /* Match the background color */
+    color: #ffffff; /* White text color */
+    border-radius: 10px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    height: calc(100vh - 60px); /* Ensure it takes full height with padding and navbar */
+    overflow-y: auto; /* Ensure the section is scrollable if content overflows */
+  }
+  
+  .notifications-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .notification-item {
+    background-color: #383838; /* Slightly lighter background for each notification */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for each notification */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .notification-item p {
+    margin: 0;
+  }
+  
+  .notification-item span {
+    font-size: 0.9rem;
+    color: #b3b3b3; /* Lighter text color for time */
+  }
+  

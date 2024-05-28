@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Analysis Results</title>
+</head>
+<body>
+    <h1>Content Analysis Results</h1>
+    
+    {% for section, metrics in analysis.items() %}
+    <h2>{{ section.replace('_', ' ').title() }}</h2>
+    <ul>
+        {% if metrics.items %}
+        {% for metric, value in metrics.items() %}
+        <li><strong>{{ metric.replace('_', ' ').title() }}:</strong> {{ value }} {% if metric in explanations %}<small>({{ explanations[metric] }})</small>{% endif %}</li>
+        {% endfor %}
+        {% else %}
+        <li>{{ metrics }}</li>
+        {% endif %}
+    </ul>
+    {% endfor %}
+    
+    <h2>Difficulty Score</h2>
+    <p><strong>{{ difficulty_score }}</strong> <small>({{ explanations['difficulty_score'] }})</small></p>
+    
+    <h2>CEFR Level</h2>
+    <p><strong>{{ cefr_level }}</strong></p>
+
+    <!-- Topics section -->
+    {% if 'topics' in analysis %}
+    <h2>Topics</h2>
+    <ul>
+        {% for topic in analysis.topics %}
+        <li><strong>Topic {{ topic[0] + 1 }}:</strong> {{ ', '.join(topic[1]) }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    
+</body>
+</html>

@@ -1,0 +1,101 @@
+.profile-page {
+    padding: 20px;
+    background-color: #282828; /* Match the background color */
+    color: #ffffff; /* White text color */
+    border-radius: 10px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    height: calc(100vh - 60px); /* Ensure it takes full height with padding and navbar */
+    overflow-y: auto; /* Ensure the section is scrollable if content overflows */
+  }
+  
+  .profile-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .profile-avatar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .profile-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .edit-avatar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1db954; /* Spotify green */
+    color: #ffffff; /* White text color */
+    cursor: pointer;
+  }
+  
+  .edit-avatar:hover {
+    background-color: #1aa34a; /* Slightly darker green on hover */
+  }
+  
+  .info-group {
+    margin-bottom: 15px;
+  }
+  
+  .info-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .info-group input,
+  .info-group select,
+  .info-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #383838; /* Slightly lighter background for inputs */
+    color: #ffffff; /* White text color */
+  }
+  
+  .info-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .recent-activities ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recent-activities li {
+    background-color: #383838;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .save-changes button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1db954; /* Spotify green */
+    color: #ffffff; /* White text color */
+    cursor: pointer;
+  }
+  
+  .save-changes button:hover {
+    background-color: #1aa34a; /* Slightly darker green on hover */
+  }
+  

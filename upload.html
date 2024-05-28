@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+</head>
+<body>
+    <form action="http://localhost:5001/api/content-details" method="post" enctype="multipart/form-data">
+        <label for="contentType">Content Type:</label>
+        <input type="text" id="contentType" name="contentType" value="lyrics"><br><br>
+        
+        <label for="originalLanguage">Original Language:</label>
+        <input type="text" id="originalLanguage" name="originalLanguage" value="English"><br><br>
+        
+        <label for="contentFile">Choose file:</label>
+        <input type="file" id="contentFile" name="contentFile"><br><br>
+        
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>

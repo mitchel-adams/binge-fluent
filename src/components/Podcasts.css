@@ -1,0 +1,52 @@
+.podcasts {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #121212; /* Dark background */
+  }
+  
+  .podcasts h1 {
+    color: #00bfff; /* Blue for headings */
+    margin-bottom: 20px;
+  }
+  
+  .podcasts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .podcast-card {
+    background-color: #1f1f1f; /* Slightly lighter dark background */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px); /* Three cards per row, adjust as needed */
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .podcast-card h2 {
+    color: #00bfff; /* Blue for card headings */
+    margin-bottom: 10px;
+  }
+  
+  .podcast-card p {
+    color: #ffffff;
+  }
+  
+  .listen-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #00bfff; /* Blue button */
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .listen-button:hover {
+    background-color: #ff4500; /* Red on hover */
+  }
+  

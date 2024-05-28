@@ -1,0 +1,31 @@
+.left-sidebar {
+  width: 23%; /* Adjust width as needed */
+  background-color: #282828; /* Slightly lighter background */
+  color: #ffffff;
+  height: calc(100vh - 80px); /* Adjust height with padding and navbar */
+  padding: 20px;
+  margin-right: 5px; /* Reduce margin to the right */
+  overflow-y: auto; /* Ensure the sidebar is scrollable if content overflows */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.sidebar-container {
+  background-color: #1c1c1c;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-container h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.sidebar-container p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #b3b3b3;
+}

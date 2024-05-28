@@ -1,0 +1,57 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000000; /* Match the navbar background */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #000000; /* Match the navbar background */
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  margin-top: 0px; /* Adjust to the height of your navbar */
+  padding: 10px; /* Add padding to main content */
+  justify-content: space-between; /* Distribute space evenly between sections */
+}
+
+.left-sidebar {
+  width: 23%; /* Fixed width */
+  background-color: #282828; /* Slightly lighter background */
+  color: #ffffff;
+  height: calc(100vh - 60px); /* Adjust height to be smaller */
+  padding: 10px;
+  margin-right: 5px; /* Reduce margin to the right */
+  overflow-y: auto; /* Ensure the sidebar is scrollable if content overflows */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.middle-section {
+  width: 54%; /* Fixed width */
+  padding: 0px;
+  background-color: #282828; /* Slightly lighter background */
+  color: #ffffff;
+  margin-left: 5px; /* Reduce margin to the left */
+  margin-right: 5px; /* Reduce margin to the right */
+  height: calc(100vh - 60px); /* Adjust height to be smaller */
+  overflow-y: auto; /* Ensure the section is scrollable if content overflows */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.right-sidebar {
+  width: 23%; /* Fixed width */
+  background-color: #282828; /* Slightly lighter background */
+  color: #ffffff;
+  height: calc(100vh - 60px); /* Adjust height to be smaller */
+  padding: 10px;
+  margin-left: 5px; /* Reduce margin to the left */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border-radius: 10px; /* Rounded corners */
+}

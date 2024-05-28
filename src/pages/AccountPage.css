@@ -1,0 +1,74 @@
+.account-page {
+    padding: 20px;
+    background-color: #282828; /* Match the background color */
+    color: #ffffff; /* White text color */
+    border-radius: 10px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    height: calc(100vh - 60px); /* Ensure it takes full height with padding and navbar */
+    overflow-y: auto; /* Ensure the section is scrollable if content overflows */
+  }
+  
+  .account-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .info-group {
+    margin-bottom: 15px;
+  }
+  
+  .info-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .info-group input,
+  .info-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #383838; /* Slightly lighter background for inputs */
+    color: #ffffff; /* White text color */
+  }
+  
+  .info-group input[readonly] {
+    background-color: #444444; /* Different background color for read-only inputs */
+  }
+  
+  .info-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1db954; /* Spotify green */
+    color: #ffffff; /* White text color */
+    cursor: pointer;
+  }
+  
+  .info-group button:hover {
+    background-color: #1aa34a; /* Slightly darker green on hover */
+  }
+  
+  .save-changes button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1db954; /* Spotify green */
+    color: #ffffff; /* White text color */
+    cursor: pointer;
+  }
+  
+  .save-changes button:hover {
+    background-color: #1aa34a; /* Slightly darker green on hover */
+  }
+  

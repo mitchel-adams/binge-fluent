@@ -1,0 +1,65 @@
+.middle-section {
+  flex-grow: 1; /* Adjust width to take remaining space */
+  padding: 0; /* Remove padding */
+  background-color: #282828; /* Spotify dark background */
+  color: #ffffff;
+  height: calc(100vh - 60px); /* Adjust height to take full viewport height minus header or other fixed elements */
+  overflow-y: auto; /* Ensure the section is scrollable if content overflows */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border-radius: 10px; /* Rounded corners */
+  margin: 0; /* Remove margin */
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+  overflow: hidden;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7; /* Adjust transparency of the image */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust the transparency */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  color: #ffffff;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  color: #b3b3b3;
+}
+
+.user-avatar {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border-radius: 50%;
+  z-index: 1;
+  border: 2px solid #ffffff; /* Optional: Add a border around the avatar */
+}
